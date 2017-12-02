@@ -13,6 +13,7 @@ import UIKit
 var UserName:String? = nil
 var Email:String? = nil
 var ProfileImg:URL? = nil
+var Token:String? = nil
 
 
 @UIApplicationMain
@@ -94,6 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate {
         UserName =  User.profile.name
         Email = User.profile.email
         ProfileImg = User.profile.imageURL(withDimension: 200)
+        Token = User.authentication.accessToken
         
         print(UserName)
         print(Email)

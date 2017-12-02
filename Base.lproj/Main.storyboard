@@ -64,17 +64,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i5d-uF-q0s">
+                                <rect key="frame" x="16" y="331" width="343" height="247"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="247" id="Vdy-ga-2uc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="EJS-SP-nPW" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1Dl-6R-i2d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Rnv-e0-8Bp" secondAttribute="trailing" constant="16" id="421-mz-hVE"/>
+                            <constraint firstItem="i5d-uF-q0s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="6Gc-H0-X1S"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Rnv-e0-8Bp" secondAttribute="bottom" constant="27" id="6RK-ps-5Ls"/>
                             <constraint firstItem="I58-yI-KLX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ByH-oI-UAB"/>
+                            <constraint firstItem="i5d-uF-q0s" firstAttribute="top" secondItem="fah-p8-Lud" secondAttribute="bottom" constant="7.5" id="Ede-T2-JnJ"/>
                             <constraint firstItem="sHB-C1-Yef" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Jga-Hh-B4T"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="I58-yI-KLX" secondAttribute="trailing" constant="16" id="NR1-9D-7r4"/>
                             <constraint firstItem="sHB-C1-Yef" firstAttribute="firstBaseline" secondItem="EJS-SP-nPW" secondAttribute="baseline" constant="50" id="NuZ-FV-jWQ"/>
                             <constraint firstItem="fah-p8-Lud" firstAttribute="trailing" secondItem="sHB-C1-Yef" secondAttribute="trailing" id="RNd-Fm-bHn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="i5d-uF-q0s" secondAttribute="trailing" constant="16" id="YjC-Cf-2TX"/>
                             <constraint firstItem="EJS-SP-nPW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ZbE-zd-PCq"/>
                             <constraint firstItem="fah-p8-Lud" firstAttribute="leading" secondItem="sHB-C1-Yef" secondAttribute="leading" id="aaT-tz-td6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sHB-C1-Yef" secondAttribute="trailing" constant="35" id="cGD-Gb-cdD"/>
@@ -89,13 +101,14 @@
                     <connections>
                         <outlet property="lblEmail" destination="fah-p8-Lud" id="UW4-js-obX"/>
                         <outlet property="lblName" destination="sHB-C1-Yef" id="Y2a-Hi-1Jy"/>
+                        <outlet property="lblToken" destination="i5d-uF-q0s" id="3Oi-j0-FP5"/>
                         <outlet property="profilePic" destination="EJS-SP-nPW" id="PEz-TS-Mdg"/>
                         <outlet property="signInButton" destination="I58-yI-KLX" id="6f4-U5-8VR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="206" y="106"/>
+            <point key="canvasLocation" x="205.59999999999999" y="105.69715142428787"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="qga-IC-2xV">

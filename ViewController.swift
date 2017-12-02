@@ -22,6 +22,7 @@ class ViewController: UIViewController,GIDSignInUIDelegate {
    
     @IBOutlet weak var lblEmail: UILabel!
     
+    @IBOutlet weak var lblToken: UITextView!
     
     
     override func viewDidLoad() {
@@ -66,7 +67,14 @@ class ViewController: UIViewController,GIDSignInUIDelegate {
             {
                 lblEmail.text = Email
             }
-      
+            if(Token == nil)
+            {
+                lblToken.text = nil
+            }
+            else
+            {
+                lblToken.text = Token
+            }
     }
 
     @IBAction func btnLogout(_ sender: Any) {
@@ -77,6 +85,7 @@ class ViewController: UIViewController,GIDSignInUIDelegate {
         profilePic.backgroundColor = UIColor.gray
         lblName.text = "Please sign in first"
         lblEmail.text = "Please sign in first"
+        lblToken.text = nil
         
     }
     override func didReceiveMemoryWarning() {
